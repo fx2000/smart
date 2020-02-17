@@ -27,6 +27,7 @@ const UserSchema = new Schema({
     },
     deleted: {
         type: Boolean,
+        required: true,
         default: false
     }
 }, {
