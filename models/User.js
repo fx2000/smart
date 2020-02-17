@@ -21,10 +21,10 @@ const UserSchema = new Schema({
         required: true,
         select: false
     },
-    rentals: {
+    rentals: [{
         type: ObjectId,
         ref: 'Rental'
-    },
+    }],
     deleted: {
         type: Boolean,
         required: true,
